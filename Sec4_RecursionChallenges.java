@@ -1,4 +1,33 @@
-public class Section4_RecursionChallenges {
+//import java.util.Arrays;
+
+public class Sec4_RecursionChallenges {
+
+    public static void main(String[] args) {
+        Sec4_RecursionChallenges test = new Sec4_RecursionChallenges();
+        var fact = test.factorial(6);
+        var pow = test.power(3, 4);
+        var fibb = test.fib(10);
+        var prodArr = test.productofArray(test.arr, 6);
+        var recRange = test.recursiveRange(5);
+        var txt = test.reverse(xstr);
+        var pali = test.isPalindrome(ystr);
+        var upp1 = Sec4_RecursionChallenges.first(zstr);
+        System.out.println(fact);
+        System.out.println(pow);
+        System.out.println(fibb);
+        System.out.println(prodArr);
+        System.out.println(recRange);
+        System.out.println(txt);
+        System.out.println(pali);
+        System.out.println(upp1);
+    }
+
+    int arr[] = {1, 2, 3, 4, 5, 6};
+    static String xstr = new String("This is for testing");
+    static String ystr = new String("amanaplanacanalpanama");
+    static String zstr = new String("nouppercasetillHere");
+
+
     public int power(int base, int exponent) {
         // TODO
         if (exponent*base < 0) {
@@ -94,7 +123,15 @@ public class Section4_RecursionChallenges {
             } else {
                 return capitalizeWord(str.substring(1));
             }
-    } 
+    }
+    
+    /*public boolean someRecursive(int[] arr, OddFunction odd) {
+        if (arr.length == 1) {
+            return odd(arr[arr.length - 1]);
+        } else {
+            return (odd(arr[arr.length - 1]) || someRecursive(Arrays.copyOfRange(arr, 0, arr.length - 1), odd));
+        }
+    }/* */
 
 
 }
