@@ -12,6 +12,7 @@ public class Sec4_RecursionChallenges {
         var txt = test.reverse(xstr);
         var pali = test.isPalindrome(ystr);
         var upp1 = Sec4_RecursionChallenges.first(zstr);
+        //var some = test.someRecursive(arr, OddFunction odd);
         System.out.println(fact);
         System.out.println(pow);
         System.out.println(fibb);
@@ -22,7 +23,7 @@ public class Sec4_RecursionChallenges {
         System.out.println(upp1);
     }
 
-    int arr[] = {1, 2, 3, 4, 5, 6};
+    static int arr[] = {1, 2, 3, 4, 5, 6};
     static String xstr = new String("This is for testing");
     static String ystr = new String("amanaplanacanalpanama");
     static String zstr = new String("nouppercasetillHere");
@@ -124,12 +125,22 @@ public class Sec4_RecursionChallenges {
                 return capitalizeWord(str.substring(1));
             }
     }
+
+    /*public class OddFunction {
+    boolean run(int num) {
+        if (num % 2 == 0) { 
+            return false; }
+        else {
+            return true;
+            }
+        }
+    }
     
-    /*public boolean someRecursive(int[] arr, OddFunction odd) {
+    public boolean someRecursive(int[] arr, OddFunction odd) {
         if (arr.length == 1) {
-            return odd(arr[arr.length - 1]);
+            return odd.run(arr[arr.length - 1]);
         } else {
-            return (odd(arr[arr.length - 1]) || someRecursive(Arrays.copyOfRange(arr, 0, arr.length - 1), odd));
+            return (odd.run(arr[arr.length - 1]) || someRecursive(Arrays.copyOfRange(arr, 0, arr.length - 1), odd));
         }
     }/* */
 
